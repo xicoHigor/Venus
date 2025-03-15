@@ -38,10 +38,22 @@
         <img class="u-image u-image-default u-image-1" src="images/beautiful-fashion-woman-posing-with-elegant-suitcopy.jpg" alt="" data-image-width="2000" data-image-height="1600" data-animation-name="customAnimationIn" data-animation-duration="2000">
        <center>
 	               <br><br>
-       <audio controls autoplay loop >
+      <audio id="meuAudio"controls autoplay muted>
 	 <source src="ModernTalking.m4a" type="audio/mpeg" >
     Seu navegador não suporta a tag de áudio.
 </audio>
+	       <div class="text-box" id="meuAudio">
+    <a href="#" class="btn btn-white btn-        animate">click me</a>
+</div>
+	       <script>
+      const audio = document.getElementById('meuAudio');
+      const botaoSom = document.getElementById('botaoSom');
+  
+      botaoSom.addEventListener('click', function() {
+          audio.muted = false;
+          botaoSom.style.display = 'none'; // Oculta o botão após clicar
+      });
+  </script>
 	       <br><br>“Em tua inocência, pareces o sol”.<br></center>
 
         <center>“Em pecado também, pareces o sol”.<br></center>
